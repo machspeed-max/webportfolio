@@ -1,0 +1,61 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body, html {
+	height: 100%;
+}
+
+.prllx-1 {
+	background-image: url("./images/elevator.jpg");
+	background-position: right bottom;
+	background-attachment: fixed;
+	height: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.prllx-2 {
+	background-image: url("./images/night-blur-lights.jpg");
+	background-position: right bottom;
+	background-attachment: fixed;
+	height: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.txt-blck1 {
+	background-color: rgb(0,0,0);
+	background-color: rgba(0,0,0, 0.4);
+	border-radius: 2px;
+	color: white;
+	font-weight: bold;
+	border: 3px solid #0f0f0f;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 2;
+	width: 80%;
+	padding: 20px;
+	text-align: center;
+	font-family: 'Noto Sans Mono', monospace;
+}
+
+#nav-btn {
+	border: none;
+}
+
+#nav-hd a {
+	color: #0080ff;
+}
+
+#nav-hd a:hover{
+	color: #ee4444;
+}
+
+#nav-hd {
+	background-color: #000000 !important;
+}
