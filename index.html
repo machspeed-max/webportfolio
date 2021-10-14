@@ -25,7 +25,7 @@
 					<a class="nav-link" href="#">About</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="#">Tools</a>
+					<a class="nav-link" href="#tools">Tools</a>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link" href="#">Contacts</a>
@@ -34,18 +34,98 @@
 		</div>  
 	</nav>
 
-	<div class="prllx-1"></div>
+	<div class="set-prllx prllx-1"></div>
 
 	<div class="txt-blck1">
 		<h2>"maccspeed"</h2>
 		<h1>I am Marco Macdon</h1>
-		<p>And I'm a Software Engineer</p>
+		<p>And I'm a Software Engineer/Web Developer</p>
 	</div>
 
-	<div class="prllx-2"></div>
+	<div class="set-prllx prllx-2" id="tools">
+		<h1 class="text-center text-light p-5">Tools</h1>
+	</div>
 
+	<div class="abouthead" id="myHeader">
+	  <h1>About</h1>
+	  <p>My running activity.</p>
+	  <button class="btn" onclick="one()">1</button>
+	  <button class="btn active" onclick="two()">2</button>
+	  <button class="btn" onclick="four()">4</button>
+	</div>
 
+	<!-- Photo Grid -->
+	<div class="container-fluid pb-5">
+		<div class="row"> 
+			<div class="col album">
+				<img src="./images/podium/firerun-3rd-fnshr.jpg" class="img-fluid">
+				<img src="./images/run/milo.jpg" class="img-fluid">
+				<img src="./images/podium/pha-healthrun-champion.jpg" class="img-fluid">
+				<img src="./images/run/bluebox.jpg" class="img-fluid">
+				<img src="./images/podium/waterrun-2nd-fnshr.jpg" class="img-fluid">
+				<img src="./images/run/nrc-van.jpg" class="img-fluid">
+			</div>
+			<div class="col album">
+				<img src="./images/run/run1.jpg" class="img-fluid">
+				<img src="./images/podium/takboph2018-3rd-fnshr.jpg" class="img-fluid">
+				<img src="./images/podium/airrun-3rd-fnshr.jpg" class="img-fluid">
+				<img src="./images/run/run2.jpg" class="img-fluid">
+				<img src="./images/podium/blueboxmanilarun2019-champion.jpg" class="img-fluid">
+				<img src="./images/run/run3.jpg" class="img-fluid">
+			</div>
+			<div class="col album">
+				<img src="./images/run/bluebox.jpg" class="img-fluid">
+				<img src="./images/podium/firerun-3rd-fnshr.jpg" class="img-fluid">
+				<img src="./images/run/milo.jpg" class="img-fluid">
+				<img src="./images/podium/pha-healthrun-champion.jpg" class="img-fluid">
+				<img src="./images/podium/waterrun-2nd-fnshr.jpg" class="img-fluid">
+				<img src="./images/run/nrc-van.jpg" class="img-fluid">
+			</div>
+			<div class="col album">
+				<img src="./images/podium/takboph2018-3rd-fnshr.jpg" class="img-fluid">
+				<img src="./images/run/run1.jpg" class="img-fluid">
+				<img src="./images/podium/airrun-3rd-fnshr.jpg" class="img-fluid">
+				<img src="./images/run/run2.jpg" class="img-fluid">
+				<img src="./images/podium/blueboxmanilarun2019-champion.jpg" class="img-fluid">
+				<img src="./images/run/run3.jpg" class="img-fluid">
+			</div>
+		</div>
+	</div>
 
+	<script>
+	var elements = document.getElementsByClassName("album");
+	var i;
+
+	function one() {
+	    for (i = 0; i < elements.length; i++) {
+	    elements[i].style.flex = "100%";
+	  }
+	}
+
+	// Two images side by side
+	function two() {
+	  for (i = 0; i < elements.length; i++) {
+	    elements[i].style.flex = "50%";
+	  }
+	}
+
+	// Four images side by side
+	function four() {
+	  for (i = 0; i < elements.length; i++) {
+	    elements[i].style.flex = "25%";
+	  }
+	}
+
+	var header = document.getElementById("myHeader");
+	var btns = header.getElementsByClassName("btn");
+	for (var i = 0; i < btns.length; i++) {
+	  btns[i].addEventListener("click", function() {
+	    var current = document.getElementsByClassName("active");
+	    current[0].className = current[0].className.replace(" active", "");
+	    this.className += " active";
+	  });
+	}
+	</script>
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
 </body>

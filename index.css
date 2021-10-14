@@ -8,22 +8,21 @@ body, html {
 	height: 100%;
 }
 
+
+.set-prllx {
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	height: 100%;
+	background-position: right bottom;
+}
+
 .prllx-1 {
 	background-image: url("./images/elevator.jpg");
-	background-position: right bottom;
-	background-attachment: fixed;
-	height: 100%;
-	background-repeat: no-repeat;
-	background-size: cover;
 }
 
 .prllx-2 {
 	background-image: url("./images/night-blur-lights.jpg");
-	background-position: right bottom;
-	background-attachment: fixed;
-	height: 100%;
-	background-repeat: no-repeat;
-	background-size: cover;
 }
 
 .txt-blck1 {
@@ -58,4 +57,52 @@ body, html {
 
 #nav-hd {
 	background-color: #000000 !important;
+}
+
+.svg-icons {
+	width: 50px;
+}
+
+/* Grid button styles */
+.btn {
+  border: none;
+  outline: none;
+  padding: 10px 16px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
+ }
+
+.abouthead {
+  text-align: center;
+  padding: 32px;
+}
+
+.row {
+  display: -ms-flexbox; /* IE 10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE 10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create two equal columns that sits next to each other */
+.album {
+  -ms-flex: 50%; /* IE 10 */
+  flex: 50%;
+  padding: 0 4px;
+}
+
+.album img {
+  margin-top: 8px;
+  vertical-align: middle;
 }
