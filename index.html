@@ -22,13 +22,13 @@
 		<div class="collapse navbar-collapse" id="collapsibleNavbar">
 			<ul class="navbar-nav d-flex ml-auto">
 				<li class="nav-item">
-					<a class="nav-link" href="#">About</a>
+					<a class="nav-link" href="#myHeader">About</a>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link" href="#tools">Tools</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="#">Contacts</a>
+					<a class="nav-link" href="#contacts">Contacts</a>
 				</li>    
 			</ul>
 		</div>  
@@ -43,7 +43,7 @@
 	</div>
 
 	<div class="set-prllx prllx-2" id="tools">
-		<h1 class="text-center text-light p-5">Tools</h1>
+		<h1 class="text-center text-light p-5">Tools Used</h1>
 		
         <div class="text-center">
 
@@ -66,16 +66,13 @@
 
             <div class="d-flex d-md-block justify-content-center">
                 <div class="d-flex d-md-block flex-column flex-md-row">
-                    <img width="150" src="images/logo-mongodb.png"/>
                     <img width="150" src="images/logo-nodejs.png"/>
                     <img width="150" src="images/logo-expressjs.png"/>
                     <img width="150" src="images/logo-react.png"/>
-                    <img width="150" src="images/logo-heroku.png"/>
                 </div>
                 <div class="d-flex d-md-block flex-column flex-md-row">
                     <img width="150" src="images/logo-git.png"/>
                     <img width="150" src="images/logo-sublime-text-3.png"/>
-                    <img width="150" src="images/logo-postman.png"/>
                     <img width="150" src="images/logo-gitlab-ci-cd.png"/>
                 </div>
             </div>
@@ -92,7 +89,7 @@
 	</div>
 
 	<!-- Photo Grid -->
-	<div class="container-fluid pb-5">
+	<div class="container-fluid pb-5 mb-5">
 		<div class="row"> 
 			<div class="col album">
 				<img src="./images/podium/firerun-3rd-fnshr.jpg" class="img-fluid">
@@ -108,6 +105,7 @@
 				<img src="./images/podium/airrun-3rd-fnshr.jpg" class="img-fluid">
 				<img src="./images/run/run2.jpg" class="img-fluid">
 				<img src="./images/podium/blueboxmanilarun2019-champion.jpg" class="img-fluid">
+				<img src="./images/run/run3.jpg" class="img-fluid">
 			</div>
 			<div class="col album">
 				<img src="./images/run/bluebox.jpg" class="img-fluid">
@@ -122,9 +120,35 @@
 				<img src="./images/run/nrc-tag.jpg" class="img-fluid">
 				<img src="./images/podium/airrun-3rd-fnshr.jpg" class="img-fluid">
 				<img src="./images/podium/blueboxmanilarun2019-champion.jpg" class="img-fluid">
-				<img src="./images/run/run3.jpg" class="img-fluid">
+				<img src="./images/run/run5.jpg" class="img-fluid">
+				<img src="./images/run/run4.jpg" class="img-fluid">
 			</div>
 		</div>
+	</div>
+
+	<h3 class="text-center mt-5 mb-5" id="contacts">Contact Us</h3>
+
+	<div class="container-fluid p-5" id="cform">
+	  <form action="/action_page.php">
+	    <label for="fname">First Name</label>
+	    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+	    <label for="lname">Last Name</label>
+	    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+	    <label for="country">Country</label>
+	    <select id="country" name="country">
+	      <option value="australia">Philippines</option>
+	      <option value="australia">Australia</option>
+	      <option value="canada">Canada</option>
+	      <option value="usa">USA</option>
+	    </select>
+
+	    <label for="subject">Subject</label>
+	    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+	    <input type="submit" value="Submit">
+	  </form>
 	</div>
 
 	<script>

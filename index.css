@@ -23,6 +23,7 @@ body, html {
 
 .prllx-2 {
 	background-image: url("./images/night-blur-lights.jpg");
+	height: 100%;
 }
 
 .txt-blck1 {
@@ -88,21 +89,58 @@ body, html {
 }
 
 .row {
-  display: -ms-flexbox; /* IE 10 */
   display: flex;
-  -ms-flex-wrap: wrap; /* IE 10 */
   flex-wrap: wrap;
   padding: 0 4px;
 }
 
-/* Create two equal columns that sits next to each other */
 .album {
-  -ms-flex: 50%; /* IE 10 */
-  flex: 50%;
+  flex: 25%;
   padding: 0 4px;
 }
 
 .album img {
   margin-top: 8px;
   vertical-align: middle;
+}
+
+
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: darkblue;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+div[class="col album"] > img {
+	width: 100%;
+}
+
+div#cform {
+	max-width: 700px;
+	margin: auto;
 }
