@@ -26,9 +26,9 @@ body, html {
 	height: 110%;
 }
 
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 360px) {
 	img.adj-img {
-		width: 50%;
+		width: 50px;
 		margin: auto;
 	}
 }
@@ -113,7 +113,7 @@ body, html {
 
 
 
-input[type=text], select, textarea {
+input[type=text], input[type=email], select, textarea {
   width: 100%;
   padding: 12px;
   border: 1px solid #ccc;
